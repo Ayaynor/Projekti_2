@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musiikkisovellus</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Musiikkisovellus</h1>
+
+  <!-- Valmiit artistit -->
+  <p>Valitse artisti:</p>
+  <div id="artistit">
+    <button class="artisti">Queen</button>
+    <button class="artisti">Adele</button>
+    <button class="artisti">Metallica</button>
+    <button class="artisti">Taylor Swift</button>
+    <button class="artisti">Eminem</button>
+  </div>
+
+  <!-- Oma haku -->
+  <p>Tai hae itse:</p>
+  <input type="text" id="hakukentta" placeholder="Artistin nimi">
+  <button id="hakunappi">Hae</button>
+
+  <!-- Albumit -->
+  <h2 id="otsikko"></h2>
+  <div id="albumit"></div>
+
+  <!-- Albumin kappaleet  -->
+  <div id="kappaleet"></div>
+
+  <script src="config.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
