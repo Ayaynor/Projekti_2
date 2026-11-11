@@ -50,8 +50,8 @@ Klikkaamalla albumia käyttäjä voi löytää uusia kappaleita artistilta, jois
 
 ## Kuvakaappaukset
 
-![Kuvakaappaus sovelluksesta](imgages/musiikkisovellus_ylälaita.png)
-![Kuvakaappaus sovelluksesta](imgages/musiikkisovellus_alalaita.png)
+![Kuvakaappaus sovelluksesta](images/musiikkisovellus_ylälaita.png)
+![Kuvakaappaus sovelluksesta](images/musiikkisovellus_alalaita.png)
 
 ## Tunnetut virheet / puutteet
 
