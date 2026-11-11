@@ -1,10 +1,10 @@
 // Tämä funktio ajetaan Netlifyn palvelimella, ei selaimessa
 export async function handler(event) {
-    
+
   // Haetaan API-avain Netlifyn ympäristömuuttujista
   const API_KEY = process.env.LASTFM_API_KEY;
 
-  // Tiedot, jotka script.js lähetti (method, artist, album)
+  // Luetaan script.js:n lähettämät hakutiedot (metodi, artisti, albumi)
   const tiedot = event.queryStringParameters;
 
   // Rakennetaan Last.fm-osoite

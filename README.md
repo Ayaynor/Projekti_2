@@ -1,4 +1,4 @@
-# Projektin nimi
+# Musiikkisovellus
 
 **Tekijät:** Elina ja Ronja
 
@@ -10,10 +10,8 @@ Verkkosivu, jonka avulla käyttäjä voi tarkistaa eri artistien albumeilla olev
 
 ### Suunnitellut toiminnot
 
-Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
-
 - Toiminto 1: Artistin valinta ennalta määrätyistä vaihtoehdoista
-- Toiminto 2: Toisena vaihtoehtona käyttäjä voi hakea itse valitsemansa artistin.
+- Toiminto 2: Toisena vaihtoehtona käyttäjä voi hakea itse valitsemansa artistin sekä virheilmoitus, mikäli haettua artistia ei löytynyt.
 - Toiminto 3: Klikkaamalla albumia verkkosivu näyttää albumilla olevat kappaleet.
 
 ### Rautalankamalli / luonnos
@@ -22,9 +20,8 @@ Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
-- **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
+- **Julkaistu sovellus:** [Projekti2_Musiikkisovellus](https://projekti2musiikkisovellus.netlify.app/)
+- **GitHub-repositorio:** [Projekti2_Repository](https://github.com/Ayaynor/Projekti_2)
 
 ## Tietoja sovelluksesta
 
@@ -36,72 +33,61 @@ Klikkaamalla albumia käyttäjä voi löytää uusia kappaleita artistilta, jois
 
 ## Teknologiat
 
-Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
-
 - HTML – sivun rakenne
 - CSS – ulkoasu ja asettelu
-- JavaScript – toiminnallisuus, 
-- localStorage – tietojen tallentaminen selaimeen
+- JavaScript – toiminnallisuus, DOM-skriptaus, API-haut ja sisällön luominen sivulle dynaamisesti
+- Last.fm API – artistien albumien ja kappaleiden tiedot
+- Netlify Functions – API-avaimen piilottaminen, API-kutsut tehdään Netlifyn palvelimen kautta
+- Netlify – sovelluksen julkaisu
+- GitHub – versionhallinta ja yhteistyö parin kanssa
 
 ## Sovelluksen käyttö
 
-Kirjoita lyhyet käyttöohjeet sovellukselle.
-
-1. Avaa julkaistu sovellus yllä olevasta linkistä.
-2. Täytä lomakkeen kentät.
-3. Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.
-4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.
-
-## Sovelluksen käynnistäminen paikallisesti
-
-1. Kloonaa tai lataa tämä repositorio omalle koneellesi.
-2. Avaa projektikansio.
-3. Avaa `index.html` selaimessa.
+1. Avaa sovellus linkistä -> https://projekti2musiikkisovellus.netlify.app/.
+2. Klikkaa jotakin artistia tai kirjoita haluamasi artisti hakukenttään ja klikkaa "hae".
+3. Alas tulee näkyviin kyseisen artistin albumit.
+4. Albumia klikkaamalla verkkosivun alalaitaan tulee näkyviin kyseisen albumin kappaleet.
 
 ## Kuvakaappaukset
 
-Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksestasi.
-
-Esimerkki kuvan lisäämisestä:
-
-![Kuvakaappaus sovelluksesta](img/screenshot.png)
+![Kuvakaappaus sovelluksesta](imgages/musiikkisovellus_ylälaita.png)
+![Kuvakaappaus sovelluksesta](imgages/musiikkisovellus_alalaita.png)
 
 ## Tunnetut virheet / puutteet
 
-Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita rajoituksia.
-
-Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
+**Ei tunnettuja virheitä.**
 
 ## Työn jakautuminen
 
-*Täytä tämä osio vain, jos teit projektin parityönä.*
+Projekti toteuttiin suhteellisen tiiviillä aikataululla, mutta siitä huolimatta yhteistyö sujui hienosti. Toteutus jakautui tasapuolisesti, sillä kaikki vaiheet tehtiin yhteistyöllä. 
 
-Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
-
-- Tekijä 1: ...
-- Tekijä 2: ...
+- Tekijä 1: Elina Miasnikova
+- Tekijä 2: Ronja Huotari
 
 ## Oma arvio ja oppimisen reflektointi
 
-Pohdi työtäsi ja oppimisprosessiasi.
-
-- Missä onnistuin?
-- Mikä oli haastavaa?
-- Mitä parantaisin, jos aikaa olisi enemmän?
-- Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta?
-- Mikä jäi epäselväksi tai mistä haluaisin oppia lisää?
-- Oma arvio projektista: **xx/10 pistettä**
+- Missä onnistuin? - API-avaimen hankkimisessa. Meidän mielestä toteutunut verkkosivu on kaikinpuolin onnistunut omien ja tehtävänannon mukaisten tavoitteiden mukaisesti (-video).
+- Mikä oli haastavaa? - API-avaimen hankkiminen tuotti alustavasti haasteita, mutta siitäkin selvittiin.
+- Mitä parantaisin, jos aikaa olisi enemmän? - Sivuston käytön puolesta olisi kiva, mikäli albumia klikatessa verkkosivu rullaisi suoraan alas kappaleisiin. Lisää hakusuodattimia.
+- Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta? - Opittiin hakemaan dataa live-API:sta fetch-funktiolla ja käsittelemään vastauksen JSON-muodossa. Opittiin myös ettei API-avainta saa laittaa suoraan frontend-koodiin, ja opittiin piilottamaan se Netlify Functionsin ja ympäristömuuttujien avulla.
+- Mikä jäi epäselväksi tai mistä haluaisin oppia lisää? - Ei tule mainittavaa mieleen.
+- Oma arvio projektista: **8/10 pistettä**
 
 ## Lähteet ja kiitokset
 
-Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesimerkit.
-
-Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
-
-- [Lähteen tai tutoriaalin nimi](https://example.com/)
-- [Kuvalähde](https://example.com/)
-- Käytetty tekoälytyökalu: ...
-  - Miten työkalua käytettiin: ...
+- Kurssimateriaali
+- [W3Schools](https://www.w3schools.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [Google Fonts](https://fonts.google.com/)
+- Kuvat:
+  - Wireframet - Itse piirretty Krita sovelluksella ja piirtopöydällä.
+  - Kuvakaappaukset omasta tekeleestä.
+- Käytetty tekoälytyökalu: Copilot
+  - Miten työkalua käytettiin: VS Coden sisällä käytetty kirjaamisen nopeuttamiseksi, kun ehdotus vastannut sitä mitä aiottu kirjata.
+- Käytetty tekoälytyökalu: Gemini
+  - Miten työkalua käytettiin: Ideoiminen.
+- Käytetty tekoälytyökalu: Claude
+  - Miten työkalua käytettiin: Koodin eheyden varmistaminen ja API-haasteiden kanssa avustaminen.
 
   ## Lisenssi
 
