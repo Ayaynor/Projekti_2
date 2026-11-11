@@ -1,5 +1,5 @@
-// API osoite
-const API_OSOITE = "https://ws.audioscrobbler.com/2.0/";
+// Kutsutaan omaa Netlify-funktiota, joka hoitaa API-avaimen
+const API_OSOITE = "/.netlify/functions/lastfm";
 
 // Lisätään klikkaus jokaiseen artistinappiin
 const napit = document.querySelectorAll(".artisti");
@@ -17,10 +17,9 @@ document.getElementById("hakunappi").addEventListener("click", function () {
   }
 });
 
-// Hakee artistin albumit Last.fm:stä
+// Hakee artistin albumit
 function haeAlbumit(artisti) {
-  const osoite = API_OSOITE + "?method=artist.gettopalbums&artist=" + encodeURIComponent(artisti) +
-                 "&api_key=" + API_KEY + "&format=json&limit=12";
+  const osoite = API_OSOITE + "?method=artist.gettopalbums&artist=" + encodeURIComponent(artisti);
 
   fetch(osoite)
     .then(function (vastaus) {
@@ -30,6 +29,7 @@ function haeAlbumit(artisti) {
       naytaAlbumit(data, artisti);
     });
 }
+
 
 // Näyttää albumit sivulla
 function naytaAlbumit(data, artisti) {
@@ -73,8 +73,7 @@ function naytaAlbumit(data, artisti) {
 // Hakee yhden albumin tiedot (kappaleet)
 function haeKappaleet(artisti, albumi) {
   const osoite = API_OSOITE + "?method=album.getinfo&artist=" + encodeURIComponent(artisti) +
-                 "&album=" + encodeURIComponent(albumi) +
-                 "&api_key=" + API_KEY + "&format=json";
+                 "&album=" + encodeURIComponent(albumi);
 
   fetch(osoite)
     .then(function (vastaus) {
