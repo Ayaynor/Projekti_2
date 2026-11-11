@@ -61,8 +61,8 @@ Klikkaamalla albumia käyttäjä voi löytää uusia kappaleita artistilta, jois
 
 Projekti toteuttiin suhteellisen tiiviillä aikataululla, mutta siitä huolimatta yhteistyö sujui hienosti. Toteutus jakautui tasapuolisesti, sillä kaikki vaiheet tehtiin yhteistyöllä. 
 
-- Tekijä 1: Elina Miasnikova
-- Tekijä 2: Ronja Huotari
+- Tekijä 1: Elina Miasnikova (n. 15h) 
+- Tekijä 2: Ronja Huotari (n. 15h)
 
 ## Oma arvio ja oppimisen reflektointi
 
